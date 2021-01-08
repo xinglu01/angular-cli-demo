@@ -6,19 +6,19 @@ import { AppComponent } from "./app.component";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
-import { DemoComponent } from "./demo/demo.component";
-import { DemoDirective } from "./demo/demo.directive";
 import { ThyGridModule } from "ngx-tethys/grid";
 import { ScrollDispatcher, ViewportRuler } from "@angular/cdk/overlay";
-import { Platform } from '@angular/cdk/platform';
-import { DragDropRegistry } from '@angular/cdk/drag-drop';
+import { Platform } from "@angular/cdk/platform";
+import { DragDropRegistry } from "@angular/cdk/drag-drop";
+import { TestComponent } from "./test/test.component";
+import { RouterModule } from "@angular/router";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json?");
 }
 
 @NgModule({
-  declarations: [AppComponent, DemoComponent, DemoDirective],
+  declarations: [AppComponent, TestComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

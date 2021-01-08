@@ -1,13 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: "app-demo",
-  templateUrl: "./demo.component.html",
-  styleUrls: ["./demo.component.scss"],
+  selector: "app-test",
+  templateUrl: "./test.component.html",
+  styleUrls: ["./test.component.scss"],
 })
-export class DemoComponent implements OnInit {
-  public cloneModel: any[];
-
+export class TestComponent implements OnInit {
   public model = [
     {
       id: "11",
@@ -106,20 +104,7 @@ export class DemoComponent implements OnInit {
       is_favorite: 1,
     },
   ];
+  constructor() {}
 
-  public selections: any = [];
-
-  public pagination = {
-    index: 1,
-    size: 10,
-    total: 12,
-  };
-
-  ngOnInit() {
-    this.cloneModel = this.model;
-    this.model = this.cloneModel.slice(
-      0,
-      this.pagination.index * this.pagination.size
-    );
-  }
+  ngOnInit() {}
 }
