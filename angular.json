@@ -9,14 +9,30 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "spec": false
+        },
+        "@schematics/angular:class": {
+          "spec": false
+        },
+        "@schematics/angular:directive": {
+          "spec": false
+        },
+        "@schematics/angular:module": {
+          "spec": false
+        },
+        "@schematics/angular:pipe": {
+          "spec": false
+        },
+        "@schematics/angular:service": {
+          "spec": false
         }
       },
       // 指定了项目文件的根文件夹
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
-      // 为本项目的各个构建器目标配置默认值
+      // 为本项目的各个构建器配置默认值
       "architect": {
          // 为 ng build 命令的选项配置默认值
         "build": {

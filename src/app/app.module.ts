@@ -11,7 +11,6 @@ import { ScrollDispatcher, ViewportRuler } from "@angular/cdk/overlay";
 import { Platform } from "@angular/cdk/platform";
 import { DragDropRegistry } from "@angular/cdk/drag-drop";
 import { TestComponent } from "./test/test.component";
-import { RouterModule } from "@angular/router";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json?");
